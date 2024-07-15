@@ -139,7 +139,8 @@ footer {
 }
 .first_part_about,
 .second_part_about,
-.third_part_about {
+.third_part_about,
+header {
   padding: 130px;
   animation: CSSscrollReveal ease-in-out both;
   animation-timeline: view();
