@@ -21,11 +21,17 @@ footer {
   width: 300px;
   height: 300px;
   object-fit: cover;
+  display: block;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+.first_part_about img.show {
+  opacity: 1;
 }
 .first_part_about,
 .second_part_about,
 .third_part_about {
-  padding: 100px;
+  padding: 130px;
   animation: CSSscrollReveal ease-in-out both;
   animation-timeline: view();
   animation-range: entry 0% cover 50%;
