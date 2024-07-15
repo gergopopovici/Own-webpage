@@ -1,0 +1,21 @@
+<body>
+    {{> navigation}}
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+           <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+          </div>
+        <input type="hidden" name="access_key" value="1f402314-38c8-4c6d-8bf4-abcbfd84b84b">
+        <input type="text" name="name" placeholder="Name (required)" class="contact_input" required>
+        <input type="email" name="email" placeholder="Email (required)"class="contact_input" required>
+        <input type="number" name="phone" placeholder="Phone"class="contact_input">
+        <textarea name="message" placeholder="Message (required)" class="contact_input" required></textarea>
+        <button type="submit" class="contact_button">Send<img src="arrow_icon.png" alt="arrow icon"></button>
+        </form>
+        <div class="contact-right">
+            <img src="right_img.png" alt="messages picture">
+        </div>
+    </div>
+    {{>footer}}
+</body>
