@@ -141,7 +141,7 @@ footer {
 .second_part_about,
 .third_part_about,
 header {
-  padding: 130px;
+  padding: 115px;
   animation: CSSscrollReveal ease-in-out both;
   animation-timeline: view();
   animation-range: entry 0% cover 50%;
