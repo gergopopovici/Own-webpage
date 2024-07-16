@@ -52,8 +52,11 @@ button {
 button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
+img {
+  border-radius: 10px;
+}
 footer {
-  padding: 100px;
+  padding: 10px;
   background-color: #333;
   animation: CSSscrollReveal ease-in-out both;
   animation-timeline: view();
@@ -61,7 +64,8 @@ footer {
 }
 .footerContainer {
   width: 100%;
-  padding: 70px 30px 20px;
+  /* padding: 70px 30px 20px;*/
+  padding: 20px 30px;
 }
 .socialIcons {
   display: flex;
@@ -161,7 +165,7 @@ header {
 }
 body {
   font-family: 'Outfit';
-  background-color: #808080;
+  background-color: #0ee1ad;
 }
 .contact-container {
   display: flex;
