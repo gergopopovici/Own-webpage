@@ -15,7 +15,16 @@
         </div>
         <div class="project snake">
             <h2>Snake Game</h2>
-            <img src="snake.png" alt="Snake picture">
+            <div class="slider">
+                <div class="slides">
+                    <img class="slide" src="mainMenuSnake.png" alt="Main menu picture">
+                    <img class="slide" src="helpMenuSnake.png" alt="Help menu picture">
+                    <img class="slide" src="GamePlaySnake.png" alt="Gameplay picture">
+                    <img class="slide" src="LeaderBoardSnake.png" alt="LeaderBoard picture">
+                </div>
+                 <button class="prev" onclick="prevSlide()">&#10094</button>
+                 <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
             <p>I implemented a basic Java Snake game using the Model-View-Controller design pattern.</p>
             <a href="https://github.com/gergopopovici/Basic-Snake-Game" class="project-button">Code</a>
         </div>
@@ -34,4 +43,5 @@ Login as admin or user (registration required for the latter) Guest: view listin
         </div>
     </div>
     {{>footer}}
+    <script src="script.js"></script>
 </body>

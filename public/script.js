@@ -16,3 +16,32 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 });
+
+let slideIndex = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll('.slide');
+  if (index >= slides.length) {
+    slideIndex = 0;
+  } else if (index < 0) {
+    slideIndex = slides.length - 1;
+  } else {
+    slideIndex = index;
+  }
+  slides.forEach((slide) => {
+    slide.classList.remove('displaySlide');
+  });
+  slides[slideIndex].classList.add('displaySlide');
+}
+
+function prevSlide() {
+  slideIndex--;
+  showSlide(slideIndex);
+}
+
+function nextSlide() {
+  slideIndex++;
+  showSlide(slideIndex);
+}
+
+showSlide(slideIndex);
